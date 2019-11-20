@@ -99,13 +99,13 @@ filegroup(
 
 """
 
-_hosted_prefix = "https://storage.googleapis.com/dart-archive/channels/dev/release"
+_hosted_prefix = "https://storage.googleapis.com/dart-archive/channels/stable/release"
 _linux_file = "dartsdk-linux-x64-release.zip"
 _mac_file = "dartsdk-macos-x64-release.zip"
 
-_version = "2.0.0-dev.69.0"
-_linux_sha = "4e23c5f9a7a1fa854aa099dc5c285249b146a89bd244ef6b6bceb4ee6568edc3"
-_mac_sha = "b376957f9cd4069443c5880066ff5b5d117f3450393de7ad57f06148e7a6b92c"
+_version = "2.6.1"
+_linux_sha = "8cff83660635b982e1bcca700a30029dcab71bd8ce1c5eb0c8102ee6c51a587c"
+_mac_sha = "3063a3151e91367fff95f63c781519a54674cc5e8b9bc847e2c6de96ed611a14"
 
 def _sdk_repository_impl(repository_ctx):
     """Downloads the appropriate SDK for the current OS."""
