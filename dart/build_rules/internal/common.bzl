@@ -17,30 +17,48 @@
 # Re-exports for backwards compatibility.
 load(
     "//dart/build_rules/common:constants.bzl",
-    "api_summary_extension",
-    "dart_filetypes",
+    _api_summary_extension = "api_summary_extension",
+    _dart_filetypes = "dart_filetypes",
 )
 load(
     "//dart/build_rules/common:context.bzl",
-    "collect_dart_context",
-    "make_dart_context",
+    _collect_dart_context = "collect_dart_context",
+    _make_dart_context = "make_dart_context",
 )
 load(
     "//dart/build_rules/common:ddc.bzl",
-    "compute_ddc_output_dir",
+    _compute_ddc_output_dir = "compute_ddc_output_dir",
 )
 load(
     "//dart/build_rules/common:label.bzl",
-    "label_to_dart_package_name",
+   _label_to_dart_package_name = "label_to_dart_package_name",
 )
 load(
     "//dart/build_rules/common:path.bzl",
-    "filter_files",
-    "relative_path",
-    "strip_extension",
+    _filter_files = "filter_files",
+    _relative_path = "relative_path",
+    _strip_extension = "strip_extension",
 )
 
 SDK_LIB_FILES = "@dart_sdk//:lib_files"
+
+api_summary_extension = _api_summary_extension
+
+dart_filetypes = _dart_filetypes
+
+collect_dart_context = _collect_dart_context
+
+make_dart_context = _make_dart_context
+
+compute_ddc_output_dir = _compute_ddc_output_dir
+
+label_to_dart_package_name = _label_to_dart_package_name
+
+filter_files = _filter_files
+
+relative_path = _relative_path
+
+strip_extension = _strip_extension
 
 def dartvm_target():
     return "@dart_sdk//:dart_vm"
