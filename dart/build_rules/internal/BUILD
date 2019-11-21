@@ -1,8 +1,8 @@
-load("@bazel_skylib//:skylark_library.bzl", "skylark_library")
+load("@bazel_skylib//:bzl_library.bzl", "bzl_library")
 
 package(default_visibility = ["//visibility:public"])
 
-skylark_library(
+bzl_library(
     name = "analyze",
     srcs = ["analyze.bzl"],
     deps = [
@@ -10,7 +10,7 @@ skylark_library(
     ],
 )
 
-skylark_library(
+bzl_library(
     name = "common",
     srcs = ["common.bzl"],
     deps = [
@@ -22,7 +22,7 @@ skylark_library(
     ],
 )
 
-skylark_library(
+bzl_library(
     name = "dart2js",
     srcs = ["dart2js.bzl"],
     deps = [
@@ -30,7 +30,7 @@ skylark_library(
     ],
 )
 
-skylark_library(
+bzl_library(
     name = "dart_library",
     srcs = ["dart_library.bzl"],
     deps = [
@@ -40,7 +40,7 @@ skylark_library(
     ],
 )
 
-skylark_library(
+bzl_library(
     name = "dart_vm_binary",
     srcs = ["dart_vm_binary.bzl"],
     deps = [
@@ -49,7 +49,7 @@ skylark_library(
     ],
 )
 
-skylark_library(
+bzl_library(
     name = "dart_vm_snapshot",
     srcs = ["dart_vm_snapshot.bzl"],
     deps = [
@@ -57,7 +57,7 @@ skylark_library(
     ],
 )
 
-skylark_library(
+bzl_library(
     name = "dart_vm_test",
     srcs = ["dart_vm_test.bzl"],
     deps = [
@@ -65,7 +65,7 @@ skylark_library(
     ],
 )
 
-skylark_library(
+bzl_library(
     name = "dart_web_application",
     srcs = ["dart_web_application.bzl"],
     deps = [
@@ -74,7 +74,7 @@ skylark_library(
     ],
 )
 
-skylark_library(
+bzl_library(
     name = "ddc",
     srcs = ["ddc.bzl"],
     deps = [
@@ -82,12 +82,12 @@ skylark_library(
     ],
 )
 
-skylark_library(
+bzl_library(
     name = "pub",
     srcs = ["pub.bzl"],
 )
 
-skylark_library(
+bzl_library(
     name = "sdk",
     srcs = ["sdk.bzl"],
 )

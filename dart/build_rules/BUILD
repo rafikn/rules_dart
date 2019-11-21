@@ -1,8 +1,8 @@
-load("@bazel_skylib//:skylark_library.bzl", "skylark_library")
+load("@bazel_skylib//:bzl_library.bzl", "bzl_library")
 
 package(default_visibility = ["//visibility:public"])
 
-skylark_library(
+bzl_library(
     name = "core",
     srcs = ["core.bzl"],
     deps = [
@@ -10,7 +10,7 @@ skylark_library(
     ],
 )
 
-skylark_library(
+bzl_library(
     name = "vm",
     srcs = ["vm.bzl"],
     deps = [
@@ -20,7 +20,7 @@ skylark_library(
     ],
 )
 
-skylark_library(
+bzl_library(
     name = "web",
     srcs = ["web.bzl"],
     deps = [

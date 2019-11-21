@@ -15,3 +15,6 @@ pubspec.lock
 .pubspec/.bazelify
 .pubspec/WORKSPACE
 .pubspec/BUILD
+
+# idea bazel plugin
+.ijwb

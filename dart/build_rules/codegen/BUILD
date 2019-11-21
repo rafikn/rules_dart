@@ -1,10 +1,10 @@
-load("@bazel_skylib//:skylark_library.bzl", "skylark_library")
+load("@bazel_skylib//:bzl_library.bzl", "bzl_library")
 
 package(default_visibility = ["//visibility:public"])
 
 exports_files(["codegen_template"])
 
-skylark_library(
+bzl_library(
     name = "_codegen_action",
     srcs = ["_codegen_action.bzl"],
     visibility = ["//visibility:private"],
@@ -14,13 +14,13 @@ skylark_library(
     ],
 )
 
-skylark_library(
+bzl_library(
     name = "_codegen_aspect",
     srcs = ["_codegen_aspect.bzl"],
     visibility = ["//visibility:private"],
 )
 
-skylark_library(
+bzl_library(
     name = "_codegen_binary",
     srcs = ["_codegen_binary.bzl"],
     visibility = ["//visibility:private"],
@@ -32,7 +32,7 @@ skylark_library(
     ],
 )
 
-skylark_library(
+bzl_library(
     name = "_codegen_rule",
     srcs = ["_codegen_rule.bzl"],
     visibility = ["//visibility:private"],
@@ -42,13 +42,13 @@ skylark_library(
     ],
 )
 
-skylark_library(
+bzl_library(
     name = "_labels",
     srcs = ["_labels.bzl"],
     visibility = ["//visibility:private"],
 )
 
-skylark_library(
+bzl_library(
     name = "codegen",
     srcs = ["codegen.bzl"],
     deps = [

@@ -1,18 +1,18 @@
-load("@bazel_skylib//:skylark_library.bzl", "skylark_library")
+load("@bazel_skylib//:bzl_library.bzl", "bzl_library")
 
 package(default_visibility = ["//visibility:public"])
 
-skylark_library(
+bzl_library(
     name = "_archive",
     srcs = ["_archive.bzl"],
 )
 
-skylark_library(
+bzl_library(
     name = "constants",
     srcs = ["constants.bzl"],
 )
 
-skylark_library(
+bzl_library(
     name = "context",
     srcs = ["context.bzl"],
     deps = [
@@ -24,12 +24,12 @@ skylark_library(
     ],
 )
 
-skylark_library(
+bzl_library(
     name = "ddc",
     srcs = ["ddc.bzl"],
 )
 
-skylark_library(
+bzl_library(
     name = "label",
     srcs = ["label.bzl"],
 )
@@ -54,7 +54,7 @@ bzl_library(
 )
 
 # TODO(@Capstan): path -> @bazel_skylib//:lib.bzl paths
-skylark_library(
+bzl_library(
     name = "path",
     srcs = ["path.bzl"],
 )
